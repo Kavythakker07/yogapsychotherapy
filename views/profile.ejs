@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Profile</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <!-- <div class="profile-picture-container"></div> -->
+            <div class="profile-text">
+                <h1 class="player-name">GamerX</h1>
+                <p class="player-rank">Rank: Platinum V</p>
+            </div>
+        </div>
+        <div class="profile-stats">
+            <div class="stat-card">
+                <h2>Score</h2>
+                <p class="stat-value">22,345</p>
+            </div>
+            <div class="stat-card">
+                <h2>Credits</h2>
+                <p class="stat-value">1,234,567</p>
+            </div>
+            <div class="stat-card">
+                <h2>Games Played</h2>
+                <p class="stat-value">356</p>
+            </div>
+            <div class="stat-card">
+                <h2>Games Won</h2>
+                <p class="stat-value">120</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="side-menu">
+        <div class="menu-header">
+            <h2>User Menu</h2>
+            <span class="close-menu" onclick="toggleMenu()">✖</span>
+        </div>
+        <ul class="menu-options">
+            <li><a href="#user-info">User Info</a></li>
+            <li><a href="#edit-account">Edit Account</a></li>
+            <li><a href="#delete-account" onclick="confirmDelete()">Delete Account</a></li>
+            <li><a href="#" onclick="confirmLogout()">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p>Are you sure you want to logout?</p>
+            <button onclick="logout()">Yes</button>
+            <button onclick="closePopup()">No</button>
+        </div>
+    </div>
+
+    <script src="/javascript/profile.js"></script>
+</body>
+</html>

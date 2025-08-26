@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Awards & Achievements</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8dcb3;
+      color: #1a1a1a;
+    }
+
+   /* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 1.4rem 2rem;
+  background-color: #f8dcb3;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.logo span {
+  color: #375a9e;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 1.5rem;
+  
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1vw;
+}
+
+.navbar nav a:hover {
+  color: #375a9e;
+}
+@media (min-width: 900px) {
+   .navBar{
+   display: flex;
+  }
+  .navBar2{
+   display: none;
+   
+  }
+}
+@media (max-width: 900px) {
+   .navBar{
+   display: none;
+  }
+  .navBar2{
+   display: flex;
+   height: 6.5%;
+   width: 6.5%;
+  }
+  .hero-img{
+   display: none;
+
+  }
+  .hero{
+   /* background-color: #145c9e; */
+   display: flex;
+   justify-content: center;
+  }
+}
+    .book-btn h3 {
+      background-color: #375a9e;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      margin: 0;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .book-btn h3:hover {
+      background-color: #2a4180;
+    }
+
+    .container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #375a9e;
+      display: inline-block;
+    }
+
+    .award-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4vw;
+    }
+
+    .award-card {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .award-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .award-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #375a9e;
+      margin-bottom: 0.5rem;
+    }
+
+    .award-year {
+      font-size: 0.95rem;
+      color: #777;
+      margin-bottom: 1rem;
+    }
+
+    .award-description {
+
+      font-size: 1rem;
+      line-height: 1.6;
+
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+    @media (max-width: 768px) {
+  .introOfDs {
+    padding: 1.5rem;
+  }
+
+  .introOfDs-text h2 {
+    font-size: 2rem;
+  }
+
+  .introOfDs-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .introOfDs-text p,
+  .introOfDs-text li {
+    font-size: 1rem;
+  }
+}
+
+.imgCon{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  overflow-x: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.imgCon img{
+   height: 50vh;
+  width: 50vw;
+  object-fit: cover;
+}
+  </style>
+</head>
+<body>
+
+   <header class="navbar">
+    <div class="logo">LSD: <span>LIFE SKILLS DYNAMICS</span></div>
+    <div class="navBar">
+    <nav style="display: flex;align-items:center;">
+      <a href="/">Home</a>
+      <a href="/introInGujarati">introduction In Gujarati</a>
+      <a href="/concept">concept </a>
+
+      <a href="/introInHindi">introduction In Hindi</a>
+
+
+      <a href="/activities">Activities</a>
+      <a href="media_news">Media News</a>
+      <a href="awards_achievements">Awards & Achievements</a>
+      <a href="terms_conditions" >
+        Terms & Conditions
+        
+    </a>
+    </nav>
+    </div>
+    <img src="../uploads/images/bullet-point.png" alt="" class="navBar2">
+
+  </header>
+
+  <div class="container">
+    <h1 class="section-title">Awards & Achievements</h1>
+    
+    <div class="award-list">
+<div class="award-list">
+
+  <div class="award-card">
+    <div class="award-title">International Recognition in Yoga Psychotherapy Research</div>
+    <div class="award-year">2021 – National Wellness Forum</div>
+    <div class="award-description">
+
+      Scientific Committee of Indian Psychiatric Society has accepted Scientific Paper on YOGA PSYCHOTHERAPY FOR ANXIETY, DEPRESSION , STRESS MANAGEMENT & SUICIDE PREVENTION submitted by Dr Pandit Devjyoti Sharma for the Annual National Conference Of Indian Psychiatric Society 2020 at Kolkata. Science Committee of World Psychiatric Association has accepted Scientific Paper on YOGA PSYCHOTHERAPY FOR MENTAL ILLNESS submitted by Dr Sharma for the 20th World Congress of Psychiatry organized by World Psychiatric Association at Bangkok, Thailand.
+    </div>
+
+    <div class="imgCon">
+      <img src="../uploads/images/d1.jpg" alt="">
+      <!-- <img src="../uploads/images/d2.jpg" alt="">
+      <img src="../uploads/images/d3.jpg" alt=""> -->
+
+    </div>
+  </div>
+
+  <div class="award-card">
+    <div class="award-title">Global Presentation of Yogic Healing Techniques</div>
+    <div class="award-year">2021 – Indian Association of Holistic Sciences</div>
+    <div class="award-description">
+
+      October 2021 :Scientific Committee of World Psychiatric Association has accepted the abstract for E- poster presentation of KUNDALINI YOGA MEDITATION and SHIVA CATHARSIS (Shiv Tandav Bhav Virechan Manopchar) for the 21st World Congress of Psychiatry from18- 21 October 2021 at Cartegena ,Colombia with 5 minutes speech delivered by Dr Pandit Devjyoti Sharma for each presentation.
+    </div>
+
+    <div class="imgCon">
+      <img src="../uploads/images/d5.jpg" alt="">
+      <!-- <img src="../uploads/images/d6.jpg" alt="">
+      <img src="../uploads/images/d7.jpg" alt="">
+      <img src="../uploads/images/d8.jpg" alt=""> -->
+
+
+
+    </div>
+  </div>
+
+  <div class="award-card">
+    <div class="award-title">Training Excellence in Suicide Prevention Through Yoga</div>
+    <div class="award-year">2021 – World Therapy Summit</div>
+    <div class="award-description">
+
+      Aug 2021 : Dr Devjyoti Sharma has provided training to the Psychiatric residents in Udaypur for modifying Suicidal Self into Spiritual Self through the process of Yoga Psychotherapy . Training program was organized by the H.O.D. of Psychiatric Department of Ravindranath Tagore Medical College Dr Sushil Kherara.​
+    </div>
+
+    <div class="imgCon">
+      <img src="../uploads/images/d9.jpg" alt="">
+      <img src="../uploads/images/d10.jpg" alt="">
+
+    </div>
+  </div>
+
+  <div class="award-card">
+    <div class="award-title">Letter of Appriciation received from ISRO(Ahmeabad)</div>
+    <div class="award-year">2021 – World Therapy Summit</div>
+    <div class="award-description">
+
+Letter of Appriciation received from ISRO(Ahmeabad) for providing Mass Yoga Psychotherapy to isro staff on 25th March 2021
+    </div>
+
+    <div class="imgCon">
+      <!-- <img src="" alt=""> -->
+      <img src="../uploads/images/d11.jpg" alt="">
+
+    </div>
+  </div>
+
+  <div class="award-card">
+    <div class="award-title">ANCIPS 2020</div>
+    <div class="award-year">2020 – National Annual Conference of Indian Psychiatric Society</div>
+    <div class="award-description">
+
+20-July-2017 : Director of Mental health and substance abuse of WORLD HEALTH ORGANIZATION , Geneva "Dr Shekher Saxena" has provided his valuable time to listen about Lifeskills Dynamic Meditation.
+    </div>
+
+    <div class="imgCon">
+      <!-- <img src="" alt=""> -->
+      <img src="../uploads/images/d12.jpg" alt="">
+
+    </div>
+  </div>
+
+  <div class="award-card">
+    <div class="award-title">the National Suicide Prevention Strategies</div>
+    <div class="award-year">2019 – W.H.O.Geneva</div>
+    <div class="award-description">
+
+04 Sep 2019 : Dr Sharma has dedicated his life for the suicide Prevention works and his name has been included in review team in the acknowledgement page of the National Suicide Prevention Strategies- Progress, Examples and Indicators published by W.H.O.Geneva. You can download this ebook free of cost from the following link for suicide Prevention purpose & guidance.
+    </div>
+
+    <div class="imgCon">
+      <!-- <img src="" alt=""> -->
+      <img src="../uploads/images/d13.jpg" alt="">
+      <img src="../uploads/images/d14.jpg" alt="">
+
+
+    </div>
+  </div>
+
+  <div class="award-card">
+    <div class="award-title">Award from Honourable Chief minister of Gujarat Shree Vijaybhai Rupani
+</div>
+    <div class="award-description">
+
+Honourable Chief minister of Gujarat Shree Vijaybhai Rupani has felicitated Dr Pandit Devjyoti Sharma for suicide prevention activities in India.This program was organised in the presence of state minister Kausik Bhai Patel, state minister Vasan Bhai Ahir, Jilla Panchayat President Laxman Sigh Soda,President of B.J.P. Kesubhai Patel,M.P. Vinodbhai Chavda, M.L.A. Dr. Nimaben Acharya,M.L.A. Virendra Sigh Jadeja,Ex. Minister I.K. JadejaEx.minister Tarachand Bhai Chheda,Ex.M.P. Pushpadan Bhai Gadvi,Ex.M.L.A.Pankaj Meta,Ex.M.L.A. Ramesh Maheswari., Prabhari Bipin Bhai Dave and many more VIPs with public.
+
+    </div>
+
+    <div class="imgCon">
+      <!-- <img src="" alt=""> -->
+      <img src="../uploads/images/d15.jpg" alt="">
+      <img src="../uploads/images/d16.jpg" alt="">
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="award-card">
+    <div class="award-title">Speaker award in 71st Annual National Conference of Indian Psychiatry Society in Lucknow dated 31st Jan - 3rd Feb 2019.
+
+</div>
+    <div class="award-description">
+
+On the occasion of National Conference of Indian Psychiatry Society , Dr.Pandit Devjyoti Sharma was guest speaker for the Lifeskills Dynamic Meditation (a part of YOGA PSYCHOTHERAPY ) for Stress Management and Suicide Prevention Workshop in the presence of Chair Person Dr R G Sharma (provide honourary service for Stress Management activities of Banaras Hindu University)and Dr Aaditya Somani (Deputy Supredent of Mental Health Institute , Govt. Medical College & Hospital, Chandigard) Indira Gandhi Pristhal Lucknow
+
+
+    </div>
+
+    <div class="imgCon">
+      <!-- <img src="" alt=""> -->
+      <img src="../uploads/images/d17.jpg" alt="">
+      <img src="../uploads/images/d18.jpg" alt="">
+      <img src="../uploads/images/d19.jpg" alt="">
+      <img src="../uploads/images/d20.jpg" alt="">
+      <img src="../uploads/images/d21.jpg" alt="">
+      <img src="../uploads/images/d22.jpg" alt="">
+      
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <div class="award-card">
+    <div class="award-title">World Suicide Prevention Day
+
+</div>
+    <div class="award-description">
+
+PUBLIC AWARENESS FOR SUICIDE PREVENTION IN INDIA was presented at the poster exhibition in the Annual National Conference of Indian Psychiatric Society , Lucknow
+
+    </div>
+
+    <div class="imgCon">
+      <!-- <img src="" alt=""> -->
+      <img src="../uploads/images/d23.jpg" alt="">
+
+
+    </div>
+  </div>
+
+
+
+   <div class="award-card">
+    <div class="award-title">PUBLIC AWARENESS FOR SUICIDE PREVENTION IN INDIA
+
+</div>
+    <div class="award-description">
+
+PUBLIC AWARENESS FOR SUICIDE PREVENTION IN INDIA was presented at the poster exhibition in the Annual National Conference of Indian Psychiatric Society , Lucknow
+
+    </div>
+
+    <div class="imgCon">
+      <!-- <img src="" alt=""> -->
+      <img src="../uploads/images/d24.jpg" alt="">
+      <img src="../uploads/images/d25.jpg" alt="">
+
+
+
+    </div>
+  </div>
+
+
+
+   <div class="award-card">
+    <div class="award-title">Appreciation letter
+
+</div>
+    <div class="award-description">
+
+Appreciation letter provided to Dr Sharma from honourable Cabinet Education Minister Shri Bhupendra Singh Chudasama for making active effort to prevent suicide in students.
+
+    </div>
+
+    <div class="imgCon">
+      <!-- <img src="" alt=""> -->
+      <img src="../uploads/images/d26.jpg" alt="">
+      <img src="../uploads/images/d27.jpg" alt="">
+      <img src="../uploads/images/d28.jpg" alt="">
+      <img src="../uploads/images/d29.jpg" alt="">
+
+
+
+
+
+    </div>
+  </div>
+
+
+   <div class="award-card">
+    <div class="award-title">Certificates of Appreciation by IASP
+
+</div>
+    <div class="award-description">
+
+Certificates of Appreciation by IASP( International Association of Suicide Prevention) for providing banners in English, Hindi and Gujarati every year.
+
+    </div>
+
+    <div class="imgCon">
+      <!-- <img src="" alt=""> -->
+      <img src="../uploads/images/d30.jpg" alt="">
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
