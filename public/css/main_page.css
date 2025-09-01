@@ -550,9 +550,14 @@ ul.section-content {
   flex-direction: column;
   align-items: center;
 }
-.background img{
-  max-height: 65vh;
-  width: 60%;
+
+.img_con_bottom{
+  display: flex;
+justify-content: space-between;
+}
+.img_con_bottom img{
+  max-height: 433vh;
+  width: 30%;
   object-fit: cover;
 
 }
@@ -609,6 +614,12 @@ ul.section-content {
   .terms-container li {
     font-size: 0.95rem;
   }
+
+  .img_con_bottom{
+  display: flex;
+  flex-direction: column;
+align-items: space-between;
+}
 }
 /* === Mobile Navbar Hidden by Default === */
 

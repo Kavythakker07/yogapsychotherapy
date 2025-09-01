@@ -8,13 +8,22 @@
   <!-- Google Fonts: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZCMZ3KJ4J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NZCMZ3KJ4J');
+</script>
 <body>
 
   <header class="navbar" id="navLinks">
     <div class="logo"> <span>Yoga Psychotherapy©</span></div>
     <div class="navBar">
     <nav style="display: flex;align-items:center;">
-      <a href="#">Home</a>
+      <a href="/">Home</a>
       <a href="/introInGujarati">introduction In Gujarati</a>
       <a href="/concept">concept </a>
 
@@ -39,7 +48,7 @@
 
     <div class="navBarM">
     <nav style="display: flex;align-items:center;">
-      <a href="#">Home</a>
+      <a href="/">Home</a>
       <a href="/introInGujarati">introduction In Gujarati</a>
       <a href="/concept">concept </a>
 
@@ -62,11 +71,10 @@
     <div class="hero-text">
       <h1>Find Balance<br>and Healing</h1>
       <p>Integrative psychotherapy and yoga<br>for mind-body wellness.</p>
-      <button class="primary-btn">Get Started</button>
+      <button class="primary-btn" onclick="fun()">Get Started</button>
     </div>
     <div class="hero-img">
-      <img src="https://th.bing.com/th/id/R.d01e6f12a59d94be511e85c7a4e46e18?rik=LFDfyfjBRZZMjw&riu=http%3a%2f%2fyourhealthexplained.com%2fwp-content%2fuploads%2f2019%2f02%2fWoman-doing-Yoga.jpg&ehk=%2flyXkaz4YIj5RMcYaaBdCpJCeQCLXpOPuuSIgwge7f8%3d&risl=&pid=ImgRaw&r=0" alt="Yoga Woman"/>
-    </div>
+<img src="../uploads/images/yogaGirl.jpg" alt="">    </div>
   </section>
 
   <section class="quote">
@@ -74,7 +82,7 @@
   </section>
 
   <section class="practitioner">
-    <img src="../uploads/images/zwi1o4te.png" alt="Yoga Woman">
+    <img src="../uploads/images/dr-sharma-378-by-486-white-closeup.jpg" alt="Yoga Woman">
     <div class="practitioner-text">
       <h3>About the Practitioner</h3>
       <p>A compassionate expert in integrative therapy and yoga, dedicated to holistic healing.</p>
@@ -220,8 +228,10 @@
   <ul class="section-content">
     <li><strong>"JIVANDHARA MARGDARSIKA"</strong> – Life Skills Education Guide Book</li>
     <li><strong>"Adolescence Psychology"</strong></li>
+    <div class="img_con_bottom">
      <img src="../uploads/images/image copy 2.png" alt="">
-  <img src="../uploads/images/image copy 3.png" alt="">
+  <img src="../uploads/images/OIP (3).webp" alt="">
+  </div>
   </ul>
 </section>
 
@@ -253,7 +263,10 @@
     at the age of 12 under the guidance of his father, Dr. Pandit Harishchandra Sharma. He has dedicated his
     life to suicide prevention and maintains a personal library of over 5000 books.
   </p>
+  <div class="img_con_bottom">
   <img src="../uploads/images/image copy 4.png" alt="">
+    <img src="../uploads/images/zwi1o4te.png" alt="Yoga Woman">
+</div>
 </section>
 
 
@@ -264,7 +277,9 @@
   const navLinks = document.getElementById('navLinks');
   const navbarForMobile = document.getElementsByClassName('navbarForMobile');
   const removeBtn = document.getElementById('rmbtn');
-
+const fun = ()=>{
+  alert("A link for app will be provided soon.")
+}
 
   
   let isOpen = false;

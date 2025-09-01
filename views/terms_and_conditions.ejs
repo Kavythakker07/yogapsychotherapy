@@ -8,8 +8,8 @@
 </head>
 <body>
 
- <header class="navbar">
-    <div class="logo">LSD: <span>LIFE SKILLS DYNAMICS</span></div>
+<header class="navbar" id="navLinks">
+    <div class="logo"> <span>Yoga Psychotherapy©</span></div>
     <div class="navBar">
     <nav style="display: flex;align-items:center;">
       <a href="/">Home</a>
@@ -28,7 +28,31 @@
     </a>
     </nav>
     </div>
-    <img src="../uploads/images/bullet-point.png" alt="" class="navBar2">
+    <img src="../uploads/images/bullet-point.png" alt="" class="navBar2" id="toggleBtn">
+
+  </header>
+
+  <header class="navbarForMobile" id="navLinks">
+    <img src="../uploads/images/remove.png" alt="" class="removeBtn" id="rmbtn">
+
+    <div class="navBarM">
+    <nav style="display: flex;align-items:center;">
+      <a href="/">Home</a>
+      <a href="/introInGujarati">introduction In Gujarati</a>
+      <a href="/concept">concept </a>
+
+      <a href="/introInHindi">introduction In Hindi</a>
+
+
+      <a href="/activities">Activities</a>
+      <a href="media_news">Media News</a>
+      <a href="awards_achievements">Awards & Achievements</a>
+      <a href="terms_conditions" >
+        Terms & Conditions
+        
+    </a>
+    </nav>
+    </div>
 
   </header>
 
@@ -50,4 +74,25 @@
 </section>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  const toggleBtn = document.getElementById('toggleBtn');
+  const navLinks = document.getElementById('navLinks');
+  const navbarForMobile = document.getElementsByClassName('navbarForMobile');
+  const removeBtn = document.getElementById('rmbtn');
+
+
+  
+  let isOpen = false;
+
+  toggleBtn.addEventListener('click', () => {
+      gsap.to(navbarForMobile, { right: "0%", duration: 0.5, ease: "power2.out" });
+   
+  });
+
+  removeBtn.addEventListener('click', () => {
+      gsap.to(navbarForMobile, { right: "-100%", duration: 0.5, ease: "power2.out" });
+   
+  });
+</script>
 </html>
