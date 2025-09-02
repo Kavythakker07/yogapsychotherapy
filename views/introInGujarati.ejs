@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <style>
-  * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,255 +21,162 @@ body {
   line-height: 1.6;
 }
 
-
-
+/* Topbar & Icons */
 .topbar {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 2rem;
   font-size: 0.9rem;
 }
-
 .social-icons a img {
   height: 16px;
   margin-right: 0.6rem;
 }
 
-
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
   padding: 1.4rem 2rem;
   background-color: #f8dcb3;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   border-bottom: 2px solid black;
   margin-bottom: 10px;
-
 }
-
 .logo {
   font-size: 1.4rem;
   font-weight: 700;
   color: #1a1a1a;
 }
-
 .logo span {
   color: #375a9e;
 }
-
-.navbar nav {
+.navBar nav {
   display: flex;
   gap: 1.5rem;
-  
 }
-
-.navbar nav a {
+.navBar nav a {
   text-decoration: none;
   color: #1a1a1a;
   font-weight: 500;
   transition: color 0.3s;
   font-size: 1vw;
 }
-
-.navbar nav a:hover {
+.navBar nav a:hover {
   color: #375a9e;
 }
-@media (min-width: 900px) {
-   .navBar{
-   display: flex;
-  }
-  .navBar2{
-   display: none;
-   
-  }
-}
-@media (max-width: 900px) {
-   .navBar{
-   display: none;
-  }
-  .navBar2{
-   display: flex;
-   height: 6.5%;
-   width: 6.5%;
-  }
-  .hero-img{
-   display: none;
 
-  }
-  .hero{
-   /* background-color: #145c9e; */
-   display: flex;
-   justify-content: center;
-  }
+/* === Mobile Nav Icons === */
+.navBar2 {
+  display: none;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
 }
-main .hero {
+
+/* === Hero Section === */
+.hero {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  gap: 2rem;
   padding: 4rem 2rem;
+  flex-wrap: wrap;
 }
-
 .hero-text {
-  max-width: 100%;
+  flex: 1 1 55%;
 }
-
 .hero-text h2 {
-  font-size: 2.8vw;
+  font-size: clamp(1.5rem, 3vw, 2.8rem);
   font-family: 'Libre Baskerville', serif;
   font-weight: normal;
   margin-bottom: 1rem;
 }
-
 .hero-text p {
-  margin-bottom: 1.5rem;
-  font-size: 1.5vw;
-  width: 95%;
-}
-
-.newsletter-link {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 600;
-  font-size: 0.95rem;
-  border-bottom: 1px solid #1a1a1a;
-  padding-bottom: 2px;
-}
-
-.hero-image img {
-  height: 100%;
- width: 40vw;
- border-radius: 15px;
- object-fit: cover;
-}
-.hero-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 3rem 2rem;
-  align-items: flex-start;
-}
-
-
-.hero-text {
-  flex: 1 1 60%;
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.hero-text p {
-  margin-bottom: 1rem;
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  margin-bottom: 1.2rem;
   text-align: justify;
 }
-
- @media (min-width: 900px) {
-   .navBar{
-   display: flex;
-  }
-  .navBar2{
-   display: none;
-   
-  }
+.hero-image {
+  flex: 1 1 35%;
 }
-@media (max-width: 900px) {
-   .navBar{
-   display: none;
-  }
-  .navBar2{
-   display: flex;
-   height: 6.5%;
-   width: 6.5%;
-  }
-  .hero-img{
-   display: none;
-
-  }
-  .hero{
-   /* background-color: #145c9e; */
-   display: flex;
-   justify-content: center;
-  }
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
 }
 
-
-
-@media screen and (max-width: 768px) {
-  .removeBtn{
-  height: 15vh;
-  width: 15vw;
-}
-  .terms-container {
-    padding: 1.5rem;
-    margin: 2rem 1rem;
-  }
-
-  .terms-container h1 {
-    font-size: 1.6rem;
-  }
-
-  .terms-container p,
-  .terms-container li {
-    font-size: 0.95rem;
-  }
-}
-/* === Mobile Navbar Hidden by Default === */
-
+/* === Navbar Mobile Fullscreen === */
 .navbarForMobile {
   position: fixed;
   top: 0;
-  right: -100%; /* completely hidden */
+  right: -100%;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #f8dcb3;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-  transition: right 0.3s ease;
   z-index: 999;
+  transition: right 0.3s ease;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
 }
-
 .navbarForMobile nav {
   display: flex;
-  height: 100vh;
   flex-direction: column;
+  gap: 1.5rem;
 }
-
 .navbarForMobile nav a {
   text-decoration: none;
   color: #1a1a1a;
   font-weight: 600;
   font-size: 1.6rem;
-  transition: color 0.3s;
 }
-
 .navbarForMobile nav a:hover {
   color: #375a9e;
 }
-
-/* === When Active === */
 .navbarForMobile.active {
   right: 0;
 }
+.removeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
 
-.navBarM nav{
-  display: flex;
-  
-  height: 100vh;
-  align-items: center;
-gap: 4vw;}
-
-
-
-@media screen and (max-width: 900px) {
-  .navBar2 {
-    display: block;
-  }
-
+/* === Responsive Breakpoints === */
+@media (max-width: 900px) {
   .navBar {
     display: none;
   }
+  .navBar2 {
+    display: block;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-text, .hero-image {
+    flex: 1 1 55%;
+  }
+  .hero-image img {
+    width: 90%;
+    height: auto;
+  }
+  .hero-text h2 {
+    font-size: 6vw;
+  }
+  .hero-text p {
+    font-size: 4.2vw;
+  }
 }
+
 </style>
 
 <body>
@@ -353,10 +260,15 @@ gap: 4vw;}
       
       
 
-      <section class="hero-section">
+      <section class="hero">
   <!-- Image Left -->
-  <div class="hero-image">
-    <img src="../uploads/images/dpdsImage.jpg" alt="ડૉ. પંડિત દેવજ્યોતિ શર્મા" style="height: 40vh; border-radius: 12px;" />
+  <div class="hero-image" style="height: fit-content;">
+    <img src="../uploads/images/dr-sharma-378-by-486-white-closeup.jpg" alt="Yoga Woman">
+    <img src="../uploads/images/3-1024x682-640x480.jpg" alt="Yoga Woman">
+    <img src="../uploads/images/4-1024x682-640x480.jpg" alt="Yoga Woman">
+    <img src="../uploads/images/zwi1o4te.png" alt="Yoga Woman">
+
+    
   </div>
 
   <!-- Text Right -->

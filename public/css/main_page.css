@@ -721,3 +721,16 @@ gap: 4vw;}
     font-size: 1.1rem;
   }
 }
+.video-grid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vw;
+  
+}
+
+.video-grid img{
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+}
