@@ -73,24 +73,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
   padding: 4rem 2rem;
   background-color: #ffffff;
 }
 
 .hero-text {
   max-width: 500px;
+  display: flex;
+  /* justify-content: center; */
   
 }
 
 .hero-text h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   color: #1a1a1a;
 }
 
-.hero-text p {
+.hero-text .sub-txt{
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
+  display: flex;
+  color: rgb(105, 103, 103);
 }
 
 .primary-btn {
