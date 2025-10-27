@@ -81,7 +81,6 @@ body {
 .hero-text {
   max-width: 500px;
   display: flex;
-  /* justify-content: center; */
   
 }
 
@@ -95,6 +94,7 @@ body {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   display: flex;
+
   color: rgb(105, 103, 103);
 }
 
@@ -444,6 +444,13 @@ section {
   color: #444;
   margin-bottom: 16px;
 }
+.section-content-images img{
+  height: 80vh;
+  width: 30vw;
+  /* object-fit: cover; */
+
+}
+
 
 .section-content a {
   color: #0066cc;
@@ -681,6 +688,12 @@ gap: 4vw;}
   .navBar {
     display: none;
   }
+  .section-content-images img{
+  height: 46vh;
+  width: 34vw;
+  /* object-fit: cover; */
+
+}
 }
 
 /* Fixing text and overflow for narrow screens */
@@ -745,5 +758,11 @@ gap: 4vw;}
   height: 40vh;
   object-fit: cover;
   
+}
+  .section-content-images img{
+  height: 46vh;
+  width: 80vw;
+  /* object-fit: cover; */
+
 }
 }
